@@ -1,24 +1,151 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Intro Sesión 2: Kit de Herramientas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🔧</span> <strong>Playbook Intro Sesión 2: Kit de Herramientas</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+             <div class="sidebar-info">
+                <p>💡 El objetivo de hoy es 100% técnico: dejar listas todas las cuentas externas que se usarán en el año.</p>
+                 <p>⏱️ Es una sesión práctica y detallada. Asegúrese de que TODOS los alumnos completen el registro para no retrasar futuras misiones.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¡Manos a la Obra! ⏰ 3 minutos</h2>
+                <p>Recapitular la sesión anterior y presentar el objetivo técnico de hoy: construir nuestro "taller digital".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recapitulación y Objetivo ⏰ 3 minutos</h3>
+                            <p>Da la bienvenida y explica que hoy se dedicarán a preparar las herramientas (plataformas) que usarán para construir proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, creadores! La sesión pasada completaron su perfil. Hoy vamos a construir nuestro taller digital. Un buen inventor necesita tener todas sus herramientas listas y organizadas. Eso es lo que haremos hoy: crear la cuenta en nuestra plataforma principal de programación, para que todo su trabajo quede guardado y seguro. ¡Vamos a preparar nuestro espacio de trabajo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Creando nuestra cuenta en MakeCode ⏰ 23 minutos</h2>
+                <p>Guía detallada para el registro en la plataforma de programación de Micro:bit.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¿Por qué una cuenta en MakeCode? ⏰ 3 minutos</h3>
+                            <p>Explica la importancia de tener una cuenta para guardar el progreso de sus proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Nuestra principal herramienta de programación será MakeCode. Es donde escribiremos los programas para el cerebro de nuestro robot, la Micro:bit. ¿Por qué necesitamos una cuenta? ¡Muy simple! Para guardar todos los proyectos geniales que van a crear. Sin una cuenta, su trabajo se podría perder cada vez que cierren la página. Con una cuenta, podrán acceder a sus creaciones desde cualquier lugar y continuar su trabajo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Registro Guiado ⏰ 15 minutos</h3>
+                            <p>Proyecta la web de MakeCode y guía a los alumnos, paso a paso, en el proceso de registro, usando una cuenta de Google o Microsoft proporcionada por el colegio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, equipo. Abran sus navegadores y vayan a makecode.microbit.org. Arriba a la derecha, verán un botón de 'Sign In' o 'Iniciar Sesión'. Hagan clic ahí. Ahora, deberán usar su cuenta del colegio (Google o Microsoft) para continuar. Sigan las instrucciones en pantalla. Lean con cuidado. Si alguien tiene un problema o ve un mensaje de error, que no se preocupe, levante la mano y lo resolvemos juntos. Es un proceso detallado, así que iremos con calma.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Verificación Robusta ⏰ 5 minutos</h3>
+                            <p>Pide a todos que creen un proyecto de prueba, lo guarden, cierren sesión y vuelvan a entrar para confirmar que la cuenta y el guardado funcionan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para confirmar que todo está perfecto, vamos a hacer una prueba de fuego. Hagan clic en 'Nuevo Proyecto'. Pónganle de nombre 'Prueba Inicial'. Ahora, busquen el botón de 'Guardar' (ícono de disco). Después, cierren la sesión completamente desde el menú de su perfil. Y ahora... vuelvan a iniciar sesión. ¿Ven su proyecto 'Prueba Inicial' en la lista? Si es así, ¡felicidades, su cuenta de MakeCode está 100% operativa!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Cierre y Próxima Misión ⏰ 14 minutos</h2>
+                <p>Introducir el hardware principal y generar expectativa para la primera sesión de creación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Kit de Herramientas Físico ⏰ 10 minutos</h3>
+                            <p>Presenta físicamente el Nezha Pro Sports Kit y sus componentes principales para generar entusiasmo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mostrando la caja del kit) Ahora que nuestro taller digital está listo, es hora de conocer nuestras herramientas físicas. Este es el Nezha Pro Sports Kit. Dentro hay un universo de posibilidades: vigas, conectores, ruedas, y lo más importante, los 'músculos' de nuestros robots: los motores para girar y los servomotores para acciones precisas, como un brazo que patea. Todo esto será controlado por el 'cerebro', la placa Micro:bit, usando la cuenta de MakeCode que acabamos de crear.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Generando Expectativa ⏰ 4 minutos</h3>
+                            <p>Conecta la sesión de hoy con la próxima, explicando cómo usarán sus nuevas cuentas para darle vida al kit.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy hemos sido técnicos de sistemas, preparando todo para la acción. En nuestra próxima sesión, seremos inventores. Usarán sus cuentas de MakeCode y la ayuda de Xolo para escribir las primeras instrucciones que le darán vida a estas piezas. Pasaremos de tener una caja con partes a tener nuestro primer robot en movimiento. ¡Prepárense!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
